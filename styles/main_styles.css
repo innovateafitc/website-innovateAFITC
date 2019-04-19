@@ -16,6 +16,7 @@
 8. Call to action
 9. Footer
 10. Image Slider
+11. Sponsors
 
 
 
@@ -1366,8 +1367,9 @@ section
 	margin-top: 7px;
 }
 
-/* Image Slider CSS */
-
+/*********************************
+10. Image Slider
+*********************************/
 .carousel {
   width: 100%;
 	padding-bottom: 5%;
@@ -1413,4 +1415,26 @@ section
     .next {
         display: none !important;
     }
+}
+
+/*********************************
+11. Sponsors
+*********************************/
+.sponsors {
+	padding-bottom: 5%;
+}
+.logo {
+	padding-top: 30%;
+	width: 80%;
+	height: auto;
+}
+.sponsor-header-title {
+	padding-top: 5%;
+	color: #329fec;
+	font-size: 48px;
+}
+
+.sponsor-title {
+	font-size: 50px;
+	margin-top: 10%;
 }
