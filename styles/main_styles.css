@@ -579,6 +579,12 @@ section
 	width: 59px;
 	height: 46px;
 }
+
+.header-logo {
+	width: 30%;
+	height: 80%;
+}
+
 .logo_image div img
 {
 	max-width: 100%;
@@ -1361,71 +1367,46 @@ section
 }
 
 /* Image Slider CSS */
-html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;}
 
-img {
+.carousel {
   width: 100%;
-  height: auto;
-	padding: 5px;
+	padding-bottom: 5%;
 }
 
-h2 {
-  text-align:center;
-	padding-bottom: 1em;
+.slide-box {
+  display: flex;
+  justify-content: space-between;
 }
 
-.slick-dots {
-	text-align: center;
-  margin: 0 0 10px 0;
-  padding: 0;
-  li {
-    display:inline-block;
-    margin-left: 4px;
-    margin-right: 4px;
-    &.slick-active {
-      button {
-        background-color:black;
-      }
-    }
-    button {
-      font: 0/0 a;
-      text-shadow: none;
-      color: transparent;
-      background-color:#999;
-      border:none;
-      width: 15px;
-      height: 15px;
-      border-radius:50%;
-    }
-		:hover{
-			background-color: black;
-		}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-/* Custom Arrow */
-.prev{
-	color: #999;
-	position: absolute;
-	top: 38%;
-	left: -2em;
-	font-size: 1.5em;
-		:hover{
-			cursor: pointer;
-			color: black;
-		}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
 }
-.next{
-	color: #999;
-	position: absolute;
-	top: 38%;
-	right: -2em;
-	font-size: 1.5em;
-	:hover{
-			cursor: pointer;
-			color: black;
-		}
+
+@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
 }
 
 @media screen and (max-width: 800px) {
