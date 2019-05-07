@@ -3330,6 +3330,19 @@ span.menu-trigger i {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
+
+.sliderLogo {
+  width: 50%;
+  height: 30%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/whiteLogo2019.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 @media only screen and (max-width: 767px) {
   .slider-direction-layout1 .nivo-directionNav a.nivo-prevNav {
     width: 40px;
