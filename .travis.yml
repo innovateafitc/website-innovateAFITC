@@ -9,6 +9,7 @@ script: htmlproofer ./_site
 # branch whitelist, only for GitHub Pages
 branches:
   only:
+  - master
   - test
 
 env:
