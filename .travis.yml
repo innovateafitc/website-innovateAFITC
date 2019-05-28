@@ -1,0 +1,37 @@
+language: ruby
+rvm:
+  - 2.4.1
+
+before_script:
+ - chmod +x ./script/cibuild
+
+install: gem install html-proofer
+
+script: htmlproofer ./_site
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - test
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+cache: bundler # caching bundler gem packages will speed up build
+
+# Optional: disable email notifications about the outcome of your builds
+notifications:
+  email: alyssasgable@gmail.com
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_KEY
+  secret_access_key: $AWS_SECRET
+  bucket: "innovateafitc.test"
+  skip_cleanup: true
+  acl: public_read
+  local_dir: public
+
+exclude: [vendor]
