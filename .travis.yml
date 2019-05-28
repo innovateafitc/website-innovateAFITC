@@ -4,7 +4,7 @@ rvm:
 
 install: gem install html-proofer
 
-script: htmlproofer ./_site
+script: htmlproofer home.html
 
 # branch whitelist, only for GitHub Pages
 branches:
