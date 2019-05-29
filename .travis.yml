@@ -4,7 +4,7 @@ rvm:
 
 install: gem install html-proofer
 
-script: htmlproofer home.html
+script: htmlproofer home.html --disable-external
 
 # branch whitelist, only for GitHub Pages
 branches:
@@ -23,12 +23,20 @@ notifications:
   email: alyssasgable@gmail.com
 
 deploy:
-  provider: s3
+- provider: s3
   access_key_id: $AWS_KEY
   secret_access_key: $AWS_SECRET
   bucket: "innovateafitc.test"
   skip_cleanup: true
   acl: public_read
-  local_dir: public
+  on:
+     branch: test
+- provider: s3
+  access_key_id: $AWS_KEY
+  secret_access_key: $AWS_SECRET
+  bucket: "www.innovateafitc.com"
+  skip_cleanup: true
+  on:
+    branch: master
 
 exclude: [vendor]
