@@ -36,7 +36,5 @@ deploy:
   secret_access_key: $AWS_SECRET
   bucket: "www.innovateafitc.com"
   skip_cleanup: true
-  on:
-    branch: master
 
 exclude: [vendor]
