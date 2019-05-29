@@ -26,7 +26,10 @@ deploy:
   provider: s3
   access_key_id: $AWS_KEY
   secret_access_key: $AWS_SECRET
+  if: branch = master
   bucket: "innovateafitc.test"
+  if: branch = test
+  bucket: "www.innovateafitc.com"
   skip_cleanup: true
   acl: public_read
   local_dir: public
