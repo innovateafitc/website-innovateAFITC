@@ -4973,25 +4973,25 @@ div ~ :last-child .progress-layout2:before {
   background-color: #4c1864;
 }
 .schedule-layout1 tbody tr:nth-child(3n) th {
-  background-color: #fad03b;
-}
-.schedule-layout1 tbody tr:nth-child(4n) th {
-  background-color: #B80C09;
-}
-.schedule-layout1 tbody tr:nth-child(5n) th {
-  background-color: #00b0ff;
-}
-.schedule-layout1 tbody tr:nth-child(6n) th {
-  background-color: #8cc63e;
-}
-.schedule-layout1 tbody tr:nth-child(7n) th {
   background-color: #4c1864;
 }
+.schedule-layout1 tbody tr:nth-child(4n) th {
+  background-color: #4c1864;
+}
+.schedule-layout1 tbody tr:nth-child(5n) th {
+  background-color: #4c1864;
+}
+.schedule-layout1 tbody tr:nth-child(6n) th {
+  background-color: #00b0ff;
+}
+.schedule-layout1 tbody tr:nth-child(7n) th {
+  background-color: #00b0ff;
+}
 .schedule-layout1 tbody tr:nth-child(8n) th {
-  background-color: #fad03b;
+  background-color: #00b0ff;
 }
 .schedule-layout1 tbody tr:nth-child(9n) th {
-  background-color: #B80C09;
+  background-color: #00b0ff;
 }
 .schedule-layout1 tbody tr:nth-child(10n) th {
   background-color: #00b0ff;
