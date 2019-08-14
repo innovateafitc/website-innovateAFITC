@@ -2710,7 +2710,7 @@ body > .eventalk-tooltip .eventalk-tooltip-bottom:after {
   transform: scaleY(1);
 }
 .eventalk-main-menu nav > ul > li ul.rt-dropdown-menu {
-  background: #4c1864;
+  background: #1B2D5A;
   box-shadow: none;
   border: none;
   -webkit-border-radius: 0;
@@ -5920,14 +5920,14 @@ div ~ :last-child .progress-layout2:before {
   margin-bottom: 6.5rem;
 }
 .speaker-layout1 .item-img {
-  position: relative;
+  margin-left: 50px;
   margin-bottom: 15px;
   overflow: hidden;
-  -webkit-border-radius: 50%;
+  /* -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 .speaker-layout1 .item-img img {
   width: 100%;
@@ -7202,7 +7202,7 @@ div ~ :last-child .progress-layout2:before {
   box-shadow: 0px 1px 0px 0px rgba(220, 220, 220, 0.75);
 }
 .blog-layout1 .item-img {
-  position: relative;
+  margin-left: 20px;
 }
 .blog-layout1 .item-img img {
   width: 100%;
@@ -7245,8 +7245,8 @@ div ~ :last-child .progress-layout2:before {
   -moz-box-shadow: 0px 1px 0px 0px rgba(220, 220, 220, 0.75);
   box-shadow: 0px 1px 0px 0px rgba(220, 220, 220, 0.75);
 }
-.blog-layout2 .item-img {
-  position: relative;
+.blog-layout2 .item-img img {
+  margin-left: 50px;
 }
 .blog-layout2 .item-img .item-date {
   text-align: center;
