@@ -4983,7 +4983,7 @@ div ~ :last-child .progress-layout2:before {
   background-color: #ff005d;
 }
 .schedule-layout1 tbody tr:nth-child(6n) th {
-  background-color: #00b0ff;
+  background-color: #ff005d;
 }
 .schedule-layout1 tbody tr:nth-child(7n) th {
   background-color: #00b0ff;
@@ -4995,6 +4995,9 @@ div ~ :last-child .progress-layout2:before {
   background-color: #00b0ff;
 }
 .schedule-layout1 tbody tr:nth-child(10n) th {
+  background-color: #00b0ff;
+}
+.schedule-layout1 tbody tr:nth-child(11n) th {
   background-color: #00b0ff;
 }
 .schedule-layout1 tbody tr td {
