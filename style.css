@@ -2622,13 +2622,16 @@ body > .eventalk-tooltip .eventalk-tooltip-bottom:after {
 /*======================================================
 [02] Header Area Style
 =======================================================*/
+.header-area {
+  background-color: #2d2d2d;
+}
 .header-area:after {
   clear: both;
   content: "";
   display: block;
 }
 .header-area .stick {
-  background-color: rgba(17, 17, 17, 0.9);
+  background-color: rgb(35, 50, 92);
   border-bottom: 2px solid #4c1864;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
