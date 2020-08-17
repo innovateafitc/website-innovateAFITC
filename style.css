@@ -4953,46 +4953,18 @@ div ~ :last-child .progress-layout2:before {
 /*======================================================
 [10] Schedule Area Style
 =======================================================*/
-  .scheduleContainer {
-     position: relative;
-     width: 100%;
-     height: 0;
-     padding-bottom: 56.25%;
-  }
-
-  #youtubeFrame {
-  /* for mobile */
-    display: none;
-  }
-
-
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .scheduleContainer {
-     position: relative;
-     width: 100%;
-     height: 0;
-     padding-bottom: 56.25%;
-  }
-
-  #youtubeFrame {
-    display: inline;
-    background-image: url("img/youtubeFrame.png");
-    background-repeat: no-repeat;
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
     position: absolute;
-    top: 30;
-    left: 10%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-  }
-
-  .iframe {
-    position: absolute;
-    top: 50;
-    left: 20%;
-  }
-
 }
 
 
